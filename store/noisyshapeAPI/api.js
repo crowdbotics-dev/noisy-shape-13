@@ -14,6 +14,18 @@ function api_v1_login_create(payload) {
 function api_v1_signup_create(payload) {
   return noisyshapeAPI.post(`/api/v1/signup/`, payload)
 }
+function modules_zoominfo_auth_token_create(payload) {
+  return noisyshapeAPI.post(`/modules/zoominfo/auth/token/`)
+}
+function modules_zoominfo_data_bulk_create(payload) {
+  return noisyshapeAPI.post(`/modules/zoominfo/data/bulk/`)
+}
+function modules_zoominfo_data_enrich_create(payload) {
+  return noisyshapeAPI.post(`/modules/zoominfo/data/enrich/`)
+}
+function modules_zoominfo_data_search_create(payload) {
+  return noisyshapeAPI.post(`/modules/zoominfo/data/search/`)
+}
 function rest_auth_login_create(payload) {
   return noisyshapeAPI.post(`/rest-auth/login/`, payload)
 }
@@ -51,6 +63,10 @@ export const apiService = {
   api_docs_schema_retrieve,
   api_v1_login_create,
   api_v1_signup_create,
+  modules_zoominfo_auth_token_create,
+  modules_zoominfo_data_bulk_create,
+  modules_zoominfo_data_enrich_create,
+  modules_zoominfo_data_search_create,
   rest_auth_login_create,
   rest_auth_logout_retrieve,
   rest_auth_logout_create,
